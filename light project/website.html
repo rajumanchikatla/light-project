@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+    <nav>
+        <img src="images/menu.png" class="menu-img">
+        <img src="images/logo.png" class="logo">
+        <ul>
+            <li><a href="">Latest</a></li>
+            <li><a href="">Modern</a></li>
+            <li><a href="">Contemporary</a></li>
+            <li><a href="">Affordable</a></li>
+            
+        </ul>
+      <button type="button" onclick="togglebtn()" id="btn"><span></span></button>
+    </nav>
+    <div class="lamp-container">
+        <img src="images/lamp.png" class="lamp"/>
+        <img src="images/light.png" class="light" id="light"/>
+    </div>
+    <div class="text">
+        <h1>RAJU MANCHIKATLA</h1><BR>
+       <P> You can place your custom text (like true/false) inside the span elements. 
+        If you want to make your toggle button large, simply add a class name "large" to the label tag or "xlarge" for extra-large.
+        Similarly, you can add multiple toggle buttons with the same HTML structure.</P>
+        <a href="">click here for raju info</a>
+        
+        
+    </div>
+
+</div>
+
+<script>
+
+  var btn=document.getElementById("btn");
+  var light=document.getElementById("light");
+
+function togglebtn()
+  {
+    btn.classList.toggle("active")
+    light.classList.toggle("on")
+  }
+</script>
+</body>
+</html>
